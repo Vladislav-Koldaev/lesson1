@@ -1,7 +1,8 @@
-a=float(input('Vvedite storonu a'))
-b=float(input('Vvedite storonu b'))
-c=float(input('Vvedite storonu c'))
-if a+b>c and a+c>b and c+b>a:
-    print('существует')
+a=input('Vvedite vozrast (1;99) ')
+b=a[-1]
+if int(a)>11 and b=='1':
+    print('мне ',a,' год')
+elif int(b)>=2 and int(b)<=4:
+    print('мне ', a, ' годa')
 else:
-    print('HE существует')
+    print('мне ', a, ' лет')

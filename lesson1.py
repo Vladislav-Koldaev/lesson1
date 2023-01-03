@@ -1,23 +1,27 @@
-a1=input('Введите день месяц год первого \n')
-a2=input()
-a3=input()
-print(a1, a2, a3)
-b1=input('Введите день месяц год второго \n')
-b2=input()
-b3=input()
-print(b1, b2, b3)
-if a3<b3:
-    print('Первый старше')
-elif a3==b3:
-    if a2<b2:
-        print('Первый старше')
-    elif a2==b2:
-        if a1<b1:
-            print('Первый старше')
-        elif a1==b1:
-            print('Они ровесники')
-        else:('Второй старше')
-    else:
-        print('Второй старше')
-else:
-    print('Второй старше')
+from paket1 import Okrujnost, Pramougolnik
+a=int(input())
+Okrujnost.def1(a)
+
+a=int(input())
+b=int(input())
+Pramougolnik.def2(a, b)
+
+import Treugolnik
+a=int(input())
+b=int(input())
+Treugolnik.def3(a,b)
+
+
+# q = int(input('vvedite 1, 2 ili 3 '))
+#
+# if q==1:
+#     a = int(input('vvedite radius'))
+#     def1(a)
+# if q==2:
+#     u=int(input('vvedite storonu 1 '))
+#     i=int(input('vvedite storonu 2 '))
+#     print(def2(u,i))
+# if q==3:
+#     g=int(input('vvedite visotu '))
+#     h=int(input('vvedite storonu osnovania '))
+#     print(def2(g, h))
